@@ -92,16 +92,16 @@
             <ul class="data">
                 <li>
                     <label for="name">Nombre y Apellido:</label>
-                    <input type="text" id="name" pattern="^[a-z]{1}+[.]{1}+[a-z0-9]{3}*$" required> <!--minlength="5" maxlength="20"-->
+                    <input type="text" id="name" required pattern="^[a-z]{1}+[.]{1}+[a-z0-9]{3}*$"> <!--minlength="5" maxlength="20"-->
                 </li>
                 <li>
                     <label for="phone">Teléfono:</label>
-                    <input type="tel" id="phone" pattern="^[0-9]{3}+[''-.]{1}+[0-9]{3}+[''-.]{1}+[0-9]{4}*$" required max="13">
+                    <input type="tel" id="phone" required pattern="^[0-9]{3}+[''-.]{1}+[0-9]{3}+[''-.]{1}+[0-9]{4}*$" max="13">
                 </li>
                 <li>
                     <label for="mail">Correo electrónico:</label>
-                    <input type="email" id="mail" pattern="^[a-zA-Z0-9]+@[bigcorp.eu]*$" required minlength="10">
-                </li>
+                    <input type="email" id="mail" required pattern="^[a-zA-Z0-9]+@[bigcorp.eu]*$" minlength="10">
+                    <span class="validity"></span></li>
                 <li>
                     <label for="pwd">Contraseña:</label>
                     <input type="password" id="pwd" required>
