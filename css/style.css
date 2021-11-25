@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 125vh;
+    background: url(../img/back.jpg) center no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.form-red-tuesday{
+    width: 62%;
+    margin: 2% 19% 0% 19%;
+    height: 115vh;
+    position: absolute;
+    text-align: left;
+    align-content: center;
+    background-color: rgba(175, 255, 235, 0.7);
+    border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: rgb(129, 250, 220);
+}
+strong{
+    color: rgb(233, 1, 1);
+}
+h3{
+    margin: 15px;
+    text-decoration: underline;
+}
+ol, ul, li{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+button{
+    margin-left: 15px;
+    padding: 2px;
+    background-color: rgb(129, 250, 220);
+}
+
+#end{
+    margin: 5px;
+    text-align: right;
+}
+
+/*no responsive - están mal*/
+@media (max-witdh: 1200px){
+    .form-red-tuesday{
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-witdh: 900px){
+    .form-red-tuesday{
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-witdh: 600px){
+    body{
+        height: 110vh;
+        width: auto;
+    }
+    .form-red-tuesday{
+        width: auto;
+        height: 110vh;
+        font-size: -1em;
+    }
+}

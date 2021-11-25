@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/validate.js" defer></script>
+    <title>Formulario Completo</title>
+  </head>
+  <body>
+
+    <div class="form-red-tuesday">
+        <h1>Bienvenid@ al Formulario de Inscripción del <strong>Red Tuesday</strong></h1>
+
+        <form class="cuestionario">
+
+            <h3>Contesta a unas simples preguntas y disfruta de un martes inolvidable</h3>
+
+            <ol class="questions" type="1"> <!--for=id, name igual para type radio-->
+                <li id="one">
+                    <p>Elige un color:</p>
+                    <input type="radio" id="red" name="color">
+                    <label for="red">Rojo</label>
+                    <input type="radio" id="blue" name="color">
+                    <label for="blue">Azul</label>
+                    <input type="radio" id="yellow" name="color">
+                    <label for="yellow">Amarillo</label>
+                </li>
+                <li id="two">
+                    <p>Elige un día:</p>
+                    <input type="radio" id="tuesday" name="day">
+                    <label for="tuesday">Martes</label>
+                    <input type="radio" id="friday" name="day">
+                    <label for="friday">Viernes</label>
+                    <input type="radio" id="sunday" name="day">
+                    <label for="sunday">Domingo</label>
+                </li>
+                <li id="three">
+                    <p>¿Qué te interesa comprar?</p>
+                    <input type="checkbox" id="op1">
+                    <label for="op1">Electrónica</label>
+                    <input type="checkbox" id="op2">
+                    <label for="op2">Informática</label>
+                    <input type="checkbox" id="op3">
+                    <label for="op3">Comida</label>
+                    <input type="checkbox" id="op4">
+                    <label for="op4">Ropa</label>
+                </li>
+                <li id="four">
+                    <label for="animals">¿Tienes animales en casa?</label>
+                    <select name="animals" id="animals">
+                        <option value="yes">Sí</option>
+                        <option value="nop">No</option>
+                    </select>
+                </li>
+                <li id="five">
+                    <label for="cars">¿Tienes coche propio?</label>
+                    <select name="cars" id="cars">
+                        <option value="yes">Sí</option>
+                        <option value="nop">No</option>
+                    </select>
+                </li>
+                <li id="six">
+                    <label>¿Qué prefieres hacer en tu tiempo libre?
+                    <input list="hobbies" name="freetime"></label>
+                    <datalist id="hobbies">
+                        <option value="Leer"></option>
+                        <option value="Jugar"></option>
+                        <option value="Deporte"></option>
+                        <option value="Fiesta"></option>
+                    </datalist>
+                </li>
+                <li id="seven">
+                    <label>¿Tienes un presupuesto para el Red Tuesday?
+                    <input list="cash" name="money"></label>
+                    <datalist id="cash">
+                        <option value="No"></option>
+                        <option value="Menos de 100"></option>
+                        <option value="Menos de 300"></option>
+                        <option value="Más de 300"></option>
+                    </datalist>
+                </li>
+                <li id="eight">
+                    <p>Escribe lo primero que se te ocurra:</p>
+                    <textarea name="whatever" rows="5" cols="30" max="200" placeholder="Escribe..."></textarea>
+                </li>
+            </ol>
+        
+        <h3>Hazte usuario para obtener ofertas personalizadas</h3>
+       
+            <ul class="data">
+                <li>
+                    <label for="name">Nombre y Apellido:</label>
+                    <input type="text" id="name" pattern="^[a-z]{1}+[.]{1}+[a-z0-9]{3}*$" required> <!--minlength="5" maxlength="20"-->
+                </li>
+                <li>
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" pattern="^[0-9]{3}+[''-.]{1}+[0-9]{3}+[''-.]{1}+[0-9]{4}*$" required max="13">
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" pattern="^[a-zA-Z0-9]+@[bigcorp.eu]*$" required minlength="10">
+                </li>
+                <li>
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" id="pwd" required>
+                </li>
+            </ul>
+        
+
+        <h3>Ya casi has terminado</h3>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        
+        <p id="end">@Copyright 2021</p>
+    </form>
+
+    </div>
+    <!---->
+  </body>
+</html>
