@@ -51,6 +51,10 @@ button{
     text-align: right;
 }
 
+input:invalid {
+    border: red solid 3px;
+}
+
 /*no responsive - están mal*/
 @media (max-witdh: 1200px){
     .form-red-tuesday{
